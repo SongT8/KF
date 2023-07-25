@@ -23,7 +23,7 @@ async def load_start():
             await app.edit_message_text(
                 restart_data["chat_id"],
                 restart_data["message_id"],
-                "**‹ تم اعادة تشغيل البوت بنجاح ›**",
+                "**- تم اعادة تشغيل البوت بنجاح .**",
             )
         except Exception:
             pass
@@ -40,10 +40,10 @@ async def load_start():
         except Exception as e:
             print("Error came while clearing db")
             pass
-    await app.send_message(OWNER_ID, "**‹ تهنى حبيبي المطور تم تشغيل البوت بنجاح ›**")
+    await app.send_message(OWNER_ID, "**- تهنى حِب تم تشغيݪ اެݪبۅت بنجاެح .**")
    # Copyrighted Area
-    await client.join_chat("xl444")
-    await client.join_chat("vvyvv6")
+    await client.join_chat("Tbiix")
+    await client.join_chat("Tniix")
     print("[INFO]: STARTED")
     
 
