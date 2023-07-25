@@ -20,11 +20,9 @@ from m8n.config import OWNER_USERNAME
 async def start_(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{START_PIC}",
-        caption=f""" ‹ مرحبا بك عزيزي في بوت **{BOT_NAME}**
-        
-- اضغط على زر ‹ الاوامر › لمعرفة الأوامر ›
-
-- اضغط على زر ‹ الاعدادات › لمعرفة الاعدادات ›""",
+        caption=f""" {message.from_user.mention()} 🫶🏻\n
+صِبَاެحِكَ سِكَࢪ ۅٛحِݪيَبَ ، مِمِكَنِ تَضِيَفَنِيَ حِتَىِ اެجَيَبَ ؟ 🐥.
+""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
