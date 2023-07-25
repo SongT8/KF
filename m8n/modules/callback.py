@@ -53,7 +53,7 @@ async def cbcmds_set(_, query: CallbackQuery):
                     InlineKeyboardButton("Everyone", callback_data="cbevery"),
                     InlineKeyboardButton("اެوَاެمࢪ اެݪمشࢪفين .", callback_data="cbadmins"),
                 ],[
-                    InlineKeyboardButton("مِسِحِ", callback_data="cbhome")
+                    InlineKeyboardButton("ࢪجَۅَعَ", callback_data="cbhome")
                 ],
             ]
         ),
@@ -75,7 +75,7 @@ async def all_set(_, query: CallbackQuery):
 
 - بنك | لفحص بنك البوت والسرعة الممكنه .
 
-- جراف | لتحويل صورة الى رابط تليجراف .
+- تج | لتحويل صورة الى رابط تليجراف .
 
 - شكراً لقرائتك الاوامر  أتمنى لك يوماً تعيساً  . 🤎""",
         reply_markup=InlineKeyboardMarkup(
@@ -86,7 +86,7 @@ async def all_set(_, query: CallbackQuery):
                     InlineKeyboardButton(
                         "اެواެمࢪ اެݪمطوِࢪين .", callback_data="cbsudo")
                 ],
-              [InlineKeyboardButton("مِسِحِ", callback_data="cbhome")]]
+              [InlineKeyboardButton("ࢪجَۅَعَ", callback_data="cbhome")]]
         ),
     )
 
@@ -112,7 +112,7 @@ async def sudo_set(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("مِسِحِ", callback_data="cbevery")
+                    InlineKeyboardButton("ࢪجَۅَعَ", callback_data="cbevery")
                 ],
             ]
         ),
@@ -144,7 +144,7 @@ async def admin_set(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("مِسِحِ", callback_data="cbevery")
+                    InlineKeyboardButton("ࢪجَۅَعَ", callback_data="cbevery")
                 ],
             ]
         ),
@@ -169,7 +169,7 @@ async def about_set(_, query: CallbackQuery):
                 ],[
                     InlineKeyboardButton("‹ السورس ›", url="https://t.me/Xl444")
                 ],[
-                    InlineKeyboardButton("مِسِحِ", callback_data="cbhome")
+                    InlineKeyboardButton("ࢪجَۅعَ", callback_data="cbhome")
                 ],
             ]
         ),
