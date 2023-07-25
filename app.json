@@ -13,7 +13,7 @@
         "OWNER_ID": {
             "description": "اكتب ايدي مالك البوت ، او اتركها كما هي",
             "required": true,
-            "value": "1854384004"
+            "value": "6377496746"
         },
         "ASSID": {
             "description": "اكتب ايدي حساب المساعد ",
@@ -48,17 +48,17 @@
         "SUPPORT": {
             "description": "اكتب هنا قناة الدعم او اتركها كما هي",
             "required": true,
-            "value": "xl444"
+            "value": "Tbiix"
         },
         "UPDATE": {
             "description": "اكتب هنا قناة المطور او اتركها كما هي",
             "required": true,
-            "value": "xl444"
+            "value": "Tbiix"
         },
         "OWNER_USERNAME": {
             "description": "اكتب هنا يوزر المطور او المالك",
             "required": true,
-            "value": "RR8R9"
+            "value": "nnnnnnnnnr"
         },
         "BOT_NAME": {
             "description": "اكتب هنا اسم بوتك او اتركها كما هي",
@@ -67,7 +67,7 @@
         },
         "START_PIC": {
             "description": "ضع رابط صورة تلكراف يضهر لكليشة ستارت",
-            "value": "https://graph.org/file/8882cbd7cc786826d9ecb.jpg",
+            "value": "https://te.legra.ph/file/466de30ee0f9383c8e09e.jpg",
             "required": true
             
         },
@@ -84,7 +84,7 @@
         "SUDO_USERS": {
             "description": "اكتب هنا ايديات المطورين او اتركها كما هي .",
             "required": true,
-            "value": "1854384004"
+            "value": "6377496746"
         },
         "BOT_TOKEN": {
             "description": "اكتب توكن البوت ",
