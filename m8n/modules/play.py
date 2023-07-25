@@ -159,11 +159,11 @@ async def hfmm(_, message):
     except:
         return
     if len(message.command) != 2:
-        await message.reply_text("لتشغيل البوت اكتب الموسيقى on لاطفاء البوت اكتب الموسيقى off يرجى ملاحظة ان الامر للمطورين فقط")
+        await message.reply_text("لتشغيل البوت اكتب الموسيقى of لاطفاء البوت اكتب الموسيقى fo يرجى ملاحظة ان الامر للمطورين فقط")
         return
     status = message.text.split(None, 1)[1]
     message.chat.id
-    if status in ["ON", "on", "On"]:
+    if status in ["ON", "on", "of"]:
         lel = await message.reply("`انتضر قليلا ..`")
         if message.chat.id not in DISABLED_GROUPS:
             await lel.edit(
@@ -175,7 +175,7 @@ async def hfmm(_, message):
             f" __- تم تشغيل البوت بنجاح **{message.chat.title}**__"
         )
 
-    elif status in ["OFF", "off", "Off"]:
+    elif status in ["OFF", "off", "fo"]:
         lel = await message.reply("__'انتضر قليلا ...'__")
 
         if message.chat.id in DISABLED_GROUPS:
@@ -185,10 +185,10 @@ async def hfmm(_, message):
             return
         DISABLED_GROUPS.append(message.chat.id)
         await lel.edit(
-            f" __- تم اطفاء البوت بنجاح**{message.chat.title}**__"
+            f" __- تم تۅقف اެݪبۅت عن اެݪعمݪ بنجاެح .**{message.chat.title}**__"
         )
     else:
-        await message.reply_text("لتشغيل البوت اكتب الموسيقى on لاطفاء البوت اكتب الموسيقى off يرجى ملاحظة ان الامر للمطورين فقط")
+        await message.reply_text("لتشغيل البوت اكتب الموسيقى of لاطفاء البوت اكتب الموسيقى fo يرجى ملاحظة ان الامر للمطورين فقط")
 
 
 @Client.on_callback_query(filters.regex(pattern=r"^(cls)$"))
@@ -224,7 +224,7 @@ async def play(_, message: Message):
 
     if message.chat.id in DISABLED_GROUPS:
         await message.reply(
-            " __**- المطور ضايج وطفة البوت راسلة وكله شبيك رحمه لدينك! **__"
+            " __**- المطور ضايج وطفة البوت راسلة وكله شبيك رحمه للاسلام ! **__"
         )
         return
     lel = await message.reply("‹ يتم التشغيل الان ›")
@@ -239,7 +239,7 @@ async def play(_, message: Message):
         return
     if not c.can_manage_voice_chats:
         await lel.edit(
-            "- انطيني هاي الصلاحية حتى اكدر اشغل."
+            "- انجب ماكدر اشغل انطيني هاي الصلاحية حتى اكدر اشغل ."
             + "\n- صلاحية الاتصال"
         )
         return
@@ -268,7 +268,7 @@ async def play(_, message: Message):
             try:
                 await ASS_ACC.join_chat(f"{message.chat.username}")
                 await message.reply(
-                    f"✅ **{ASSNAME} تم انضم المساعد -**",
+                    f"✅ **{ASSNAME} فرحان هواي لان دزيتولي دعوة -**",
                 )
                 await remove_active_chat(chat_id)
             except Exception as e:
@@ -284,7 +284,7 @@ async def play(_, message: Message):
                     link_bokep = f"https://t.me/joinchat/{kontol}"
                 await ASS_ACC.join_chat(link_bokep)
                 await message.reply(
-                    f"✅ **{ASSNAME} تم انضم المساعد**",
+                    f"✅ **{ASSNAME} فرحان هواي لان دزيتولي دعوة**",
                 )
                 await remove_active_chat(message.chat.id)
             except UserAlreadyParticipant:
@@ -319,10 +319,10 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("‹ تحكم اونلاين ›", callback_data="cbmenu"),
+                    InlineKeyboardButton(" تَحِكَمِ ", callback_data="cbmenu"),
                 ], 
                     
-                [InlineKeyboardButton(text="‹ تنظيف ›", callback_data="cls")],
+                [InlineKeyboardButton(text="تَنِظيَفَ", callback_data="cls")],
             ]
         )
 
@@ -357,10 +357,10 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("‹ تحكم اونلاين ›", callback_data="cbmenu"),
+                        InlineKeyboardButton(" تَحِكَمِ ", callback_data="cbmenu"),
                     ],   
                         
-                    [InlineKeyboardButton(text="‹ تنظيف ›", callback_data="cls")],
+                    [InlineKeyboardButton(text=" تَنِظِيَفَ ", callback_data="cls")],
                 ]
             )
 
@@ -406,7 +406,7 @@ async def play(_, message: Message):
                     try:
                         if eta > 2:
                             lel.edit(
-                                f"‹ يتم التشغيل الان ›"
+                                f"يَتمَ اެݪتشغِيݪ اެلانِ ..."
                             )
                     except Exception as e:
                         pass
@@ -415,7 +415,7 @@ async def play(_, message: Message):
                         flex[str(bytesx)] += 1
                         if eta > 2:
                             lel.edit(
-                                f"‹ يتم البحث الان ›"
+                                f"جَاެࢪي اެݪبَحثَ..."
                             )
                         print(
                             f"[{url_suffix}] Downloaded {percentage} at a speed of {speed} | ETA: {eta} seconds"
@@ -425,7 +425,7 @@ async def play(_, message: Message):
                         flex[str(bytesx)] += 1
                         if eta > 2:
                             lel.edit(
-                                f"‹ يتم التشغيل الان ›"
+                                f"يَتمَ اެݪتشغِيݪ اެلانِ ..."
                             )
                         print(
                             f"[{url_suffix}] Downloaded {percentage} at a speed of {speed} | ETA: {eta} seconds"
@@ -435,7 +435,7 @@ async def play(_, message: Message):
                         flex[str(bytesx)] += 1
                         if eta > 2:
                             lel.edit(
-                                f"‹ يتم البحث الان ›"
+                                f"جَاެࢪي اެݪبَحثَ..."
                             )
                         print(
                             f"[{url_suffix}] Downloaded {percentage} at a speed of {speed} | ETA: {eta} seconds"
@@ -447,7 +447,7 @@ async def play(_, message: Message):
                     taken = "00:00"
                 size = d["_total_bytes_str"]
                 lel.edit(
-                    f"‹ يتم التشغيل الان ›"
+                    f"يَتمَ اެݪتشغِيݪ اެلانِ ..."
                 )
                 print(f"[{url_suffix}] Downloaded| Elapsed: {taken} seconds")
 
@@ -457,12 +457,12 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await lel.edit(
-                "‹ الرد على ملف صوتي او اعطاء شيء للبحث ›"
+                "يمعود لم يتم العثور على نتائج جرب دز اسم الاغنية الكامل ."
             )
-        await lel.edit("‹ يتم البحث الان ›")
+        await lel.edit("جَاެࢪي اެݪبَحثَ...")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("‹ يتم التشغيل الان ›")
+        await lel.edit("يَتمَ اެݪتشغِيݪ اެلانِ ...")
         try:
             results = YoutubeSearch(query, max_results=5).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -485,7 +485,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             await lel.edit(
-                "- لم يتم العثور على الأغنية اكتب اسمها الكامل ."
+                "- يمعود لم يتم العثور على نتائج جرب دز اسم الاغنية الكامل"
             )
             print(str(e))
             return
@@ -493,10 +493,10 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("‹ تحكم اونلاين ›", callback_data="cbmenu"),
+                    InlineKeyboardButton("تَحِكَمِ", callback_data="cbmenu"),
                 ],
                     
-                [InlineKeyboardButton(text="‹ تنظيف ›", callback_data="cls")],
+                [InlineKeyboardButton(text="تَنِظِيَفَ", callback_data="cls")],
             ]
         )
 
@@ -526,7 +526,7 @@ async def play(_, message: Message):
                     try:
                         if eta > 2:
                             lel.edit(
-                                f"‹ يتم البحث الان ›"
+                                f"جَاެࢪي اެݪبَحثَ..."
                             )
                     except Exception as e:
                         pass
@@ -535,7 +535,7 @@ async def play(_, message: Message):
                         flex[str(bytesx)] += 1
                         if eta > 2:
                             lel.edit(
-                                f"‹ يتم التشغيل الان ›"
+                                f"يَتمَ اެݪتشغِيݪ اެلانِ ..."
                             )
                         print(
                             f"[{url_suffix}] Downloaded {percentage} at a speed of {speed} | ETA: {eta} seconds"
@@ -545,7 +545,7 @@ async def play(_, message: Message):
                         flex[str(bytesx)] += 1
                         if eta > 2:
                             lel.edit(
-                                f"‹ يتم البحث الان ›"
+                                f"جَاެࢪي اެݪبَحثَ..."
                             )
                         print(
                             f"[{url_suffix}] Downloaded {percentage} at a speed of {speed} | ETA: {eta} seconds"
@@ -555,7 +555,7 @@ async def play(_, message: Message):
                         flex[str(bytesx)] += 1
                         if eta > 2:
                             lel.edit(
-                                f"‹ يتم التشغيل الان ›"
+                                f"يَتمَ اެݪتشغِيݪ اެلانِ ..."
                             )
                         print(
                             f"[{url_suffix}] Downloaded {percentage} at a speed of {speed} | ETA: {eta} seconds"
@@ -567,7 +567,7 @@ async def play(_, message: Message):
                     taken = "00:00"
                 size = d["_total_bytes_str"]
                 lel.edit(
-                    f"‹ تم التشغيل ›"
+                    f"❤️‍🔥 تَتم اެݪاضافَة ..."
                 )
                 print(f"[{url_suffix}] Downloaded| Elapsed: {taken} seconds")
 
@@ -579,7 +579,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
             photo="https://graph.org/file/a7a4ba8ac40b7f0bfb46f.jpg",
-            caption="**[- تم ضفتها ݪقأئمة أݪأڼتضاࢪ 🫡.]({})**\n\n**- شغݪهأ أݪأخ : {}**\n**- تم ۅدأعتڪ ضفتها ݪقأئمة أݪأڼتضاࢪ : {}**".format(
+            caption="**[- اެبشࢪ عيني ضفتها ݪݪانتضاࢪ .]({})**\n\n**- طݪب اެݪحݪۅ : {}**\n**- تم حب ضفتها ݪقأئمة أݪأڼتضاࢪ : {}**".format(
                 url,
                 message.from_user.mention(),
                 position,
@@ -599,20 +599,20 @@ async def play(_, message: Message):
             )
         except Exception:
             return await lel.edit(
-                "- شلون اشغل وانتو مفاتحين اتصال شبيكم عمي ."
+                "- افتحو اتصال حتى اشغل شبيكم عمي ."
             )
 
         await music_on(message.chat.id)
         await add_active_chat(message.chat.id)
         await message.reply_photo(
-            photo="https://graph.org/file/a7a4ba8ac40b7f0bfb46f.jpg",
+            photo="https://te.legra.ph/file/cd5c96a3c7e8ae1913ef3.png",
             reply_markup=keyboard,
-            caption="**[- تَم حبيبيَ اެصعَد اެسمعهاެ 🫶🏻.]({})\n\n**- شغݪهأ أݪأخ : {}**\n- أسم ڪࢪۅبي : {}**".format(
+            caption="**[- اެبَشِࢪ يَحِݪۅٛ اެصِعَدَ اެسِمِعَهِاެ بَࢪاެحِتَكَ 🫶🏻 ،]({})\n\n**- طݪب اެݪحݪۅ : {}**\n- أسم الِكرَوبِ : {}**".format(
                 url, message.from_user.mention(), message.chat.title
             ),
         )
 
-    os.remove("https://graph.org/file/a7a4ba8ac40b7f0bfb46f.jpg")
+    os.remove("https://te.legra.ph/file/cd5c96a3c7e8ae1913ef3.png")
     return await lel.delete()
         
 
