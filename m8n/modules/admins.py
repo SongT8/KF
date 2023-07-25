@@ -88,16 +88,16 @@ async def pause(_, message: Message):
     chat_id = message.chat.id
     if not await is_active_chat(chat_id):
         return await message.reply_text(
-            " __**- ماكو شي مشتغل حبيب .**__"
+            " __**- ماެكو شي مشتغݪ ياެعيني .**__"
         )
     elif not await is_music_playing(message.chat.id):
         return await message.reply_text(
-            " __**- ماكو شي مشتغل حبيب .**__"
+            " __**- ماެكو شي مشتغݪ ياެعيني .**__"
         )
     await music_off(chat_id)
     await calls.pytgcalls.pause_stream(chat_id)
     await message.reply_text(
-        f"• تم ايقاف التشغيل مؤقتا\n• By : {checking}"
+        f"- اެبشࢪ يحݪۅ تَم ۅكَفت اެݪاغِنية بَعد ؟\n• By : {checking}"
     )
 
 
@@ -115,11 +115,11 @@ async def resume(_, message: Message):
     chat_id = message.chat.id
     if not await is_active_chat(chat_id):
         return await message.reply_text(
-            " __**- ماكو شي مشتغل حبيب .**__"
+            " __**- ماެكو شي مشتغݪ ياެعيني .**__"
         )
     elif await is_music_playing(chat_id):
         return await message.reply_text(
-            " __**- ماكو شي مشتغل حبيب .**__"
+            " __**- ماެكو شي مشتغݪ ياެعيني .**__"
         )
     else:
         await music_on(chat_id)
@@ -149,11 +149,11 @@ async def stop(_, message: Message):
         await remove_active_chat(chat_id)
         await calls.pytgcalls.leave_group_call(chat_id)
         await message.reply_text(
-            f"• تم ايقاف التشغيل \n• بواسطة : {checking}"
+            f"- اެبشࢪ يحݪۅ تَم ۅكَفت اެݪاغِنية بَعد ؟\n• بواسطة : {checking}"
         )
     else:
         return await message.reply_text(
-            " __**- ماكو شي مشتغل حبيب .**__"
+            " __**- ماެكو شي مشتغݪ ياެعيني .**__"
         )
 
 
@@ -171,7 +171,7 @@ async def skip(_, message: Message):
     chat_id = message.chat.id
     chat_title = message.chat.title
     if not await is_active_chat(chat_id):
-        await message.reply_text(" __**- ماكو شي مشتغل حبيب .**__")
+        await message.reply_text(" __**- ماެكو شي مشتغݪ ياެعيني .**__")
     else:
         task_done(chat_id)
         if is_empty(chat_id):
@@ -191,7 +191,7 @@ async def skip(_, message: Message):
                 ),
             )
             await message.reply_text(
-                f"• تم تخطي الاغنية بنجاح\n• بواسطة : {checking}"
+                f"- اެبشࢪ يحݪۅ تَم تخطِي اެݪاغنية\n• بواسطة : {checking}"
             )
 
 
