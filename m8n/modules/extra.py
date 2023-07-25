@@ -16,11 +16,11 @@ from pyrogram import Client, filters
 from m8n.config import BOT_USERNAME
 
 
-@Client.on_message(command(["جراف", "تلجراف"]))
+@Client.on_message(command(["تج", "تلجراف"]))
 async def telegraph(client, message):
     replied = message.reply_to_message
     if not replied:
-        await message.reply("- رد على صورة حتى احولها رابط تلجراف .")
+        await message.reply("‹ رد على صورة حتى احولها رابط تلجراف ›")
         return
     if not (
         (replied.photo and replied.photo.file_size <= 5242880)
@@ -38,7 +38,7 @@ async def telegraph(client, message):
             and replied.document.file_size <= 5242880
         )
     ):
-        await message.reply("هاي شداز انت !!")
+        await message.reply("هاي شداز  يمعود !!")
         return
     download_location = await client.download_media(
         message=message.reply_to_message,
@@ -49,7 +49,7 @@ async def telegraph(client, message):
     except Exception as document:
         await message.reply(message, text=document)
     else:
-        await message.reply(f"**- تم تحويل الصورة الى رابط تليجراف بنجاح :\n\nhttps://telegra.ph{response[0]}**", disable_web_page_preview=False)
+        await message.reply(f"**- تمام حب حولت الصورة المطلوبة الى رابط تليجراف بنجاح  :\n\nhttps://telegra.ph{response[0]}**", disable_web_page_preview=False)
     finally:
         os.remove(download_location)
 
