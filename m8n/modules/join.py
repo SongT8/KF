@@ -11,7 +11,7 @@ from m8n.tgcalls import client as USER
 
 
 @app.on_message(
-    command(["انضم", "ادخل", "نضم"]) & ~filters.private & ~filters.bot
+    command(["انضم", "ادخل", "دخل"]) & ~filters.private & ~filters.bot
 )
 @errors
 async def addchannel(client, message):
@@ -44,7 +44,7 @@ async def addchannel(client, message):
         await USER.join_chat(link_bokep)
     except UserAlreadyParticipant:
         await message.reply_text(
-            f" **{user.first_name} - موجود والقاسم**",
+            f" **{user.first_name} - موجود يمعود **",
         )
     except Exception as e:
         print(e)
@@ -68,7 +68,7 @@ async def rem(USER, message):
     try:
         await USER.send_message(
             message.chat.id,
-            " __- اصلا صوجي اجيت دباي__\n\n - مره ثانية اذا تريدوني اجي راسلو المطور معلية بعد ",
+            " __- اصلا صوجي اجيت دباي__\n\n - هوه مو صوجك صوج الكواد الي اجا يغنيلكم  ",
         )
         await USER.leave_chat(message.chat.id)
     except:
