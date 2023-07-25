@@ -1,5 +1,5 @@
 {
-    "name": "سورس ميوزك فريدوم",
+    "name": "سورس فنيوم ميوزك مجاني حب .",
     "description": "سورس فريدوم لتشغيل الاغاني , رائع انت تستخدم احدث اصدار !",
     "logo": "https://te.legra.ph/file/4807752a011965b771900.jpg",
     "keywords": ["music", "voice chat", "telegram"],
@@ -59,11 +59,6 @@
             "description": "اكتب هنا يوزر المطور او المالك",
             "required": true,
             "value": "nnnnnnnnnr"
-        },
-        "BOT_NAME": {
-            "description": "اكتب هنا اسم بوتك او اتركها كما هي",
-            "required": true,
-            "value": "freedom"
         },
         "START_PIC": {
             "description": "ضع رابط صورة تلكراف يضهر لكليشة ستارت",
