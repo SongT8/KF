@@ -304,7 +304,7 @@ async def skipvc(_, CallbackQuery):
             await CallbackQuery.answer()
             await CallbackQuery.message.reply(
                 f"""
-**- تم تخطي الاغنية بواسطة** {rpk}
+**- تَم تخَطي اެلاِغنية بۅاެسطة** {rpk}
 • لايوجد شي قيد التشغيل 
 `- تم مغادرة حساب المساعد`
 """
