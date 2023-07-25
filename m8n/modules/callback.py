@@ -48,12 +48,12 @@ async def cbcmds_set(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("‹ اوامر المطورين ›", callback_data="cbsudo"),
+                    InlineKeyboardButton("اެوَاެمࢪ اެݪمطوِࢪين .", callback_data="cbsudo"),
                 ],[
                     InlineKeyboardButton("Everyone", callback_data="cbevery"),
-                    InlineKeyboardButton("‹ اوامر المشرفين ›", callback_data="cbadmins"),
+                    InlineKeyboardButton("اެوَاެمࢪ اެݪمشࢪفين .", callback_data="cbadmins"),
                 ],[
-                    InlineKeyboardButton("‹ رجوع ›", callback_data="cbhome")
+                    InlineKeyboardButton("مِسِحِ", callback_data="cbhome")
                 ],
             ]
         ),
@@ -77,16 +77,16 @@ async def all_set(_, query: CallbackQuery):
 
 - جراف | لتحويل صورة الى رابط تليجراف .
 
-- مطور البوت | @{UPDATE}""",
+- شكراً لقرائتك الاوامر  أتمنى لك يوماً تعيساً  . 🤎""",
         reply_markup=InlineKeyboardMarkup(
             [
               [
                     InlineKeyboardButton(
-                        "‹ اوامر المشرفين ›", callback_data="cbadmins"),
+                        "اެۅٛاެمࢪ اެݪمشࢪفين .", callback_data="cbadmins"),
                     InlineKeyboardButton(
-                        "‹ اوامر المطورين ›", callback_data="cbsudo")
+                        "اެواެمࢪ اެݪمطوِࢪين .", callback_data="cbsudo")
                 ],
-              [InlineKeyboardButton("‹ رجوع ›", callback_data="cbhome")]]
+              [InlineKeyboardButton("مِسِحِ", callback_data="cbhome")]]
         ),
     )
 
@@ -108,11 +108,11 @@ async def sudo_set(_, query: CallbackQuery):
 
 - المغادرة | لمغادرة حساب المساعد من المجموعات .
 
-- مطور البوت | @{UPDATE}""",
+- شكراً لقرائتك الاوامر  أتمنى لك يوماً تعيساً  . 🤎""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("‹ رجوع ›", callback_data="cbevery")
+                    InlineKeyboardButton("مِسِحِ", callback_data="cbevery")
                 ],
             ]
         ),
@@ -140,11 +140,11 @@ async def admin_set(_, query: CallbackQuery):
 
 - غادر | لمغادرة حساب المساعد المجموعة .
 
-- مطور البوت | @{UPDATE}""",
+- شكراً لقرائتك الاوامر  أتمنى لك يوماً تعيساً  . 🤎""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("‹ رجوع ›", callback_data="cbevery")
+                    InlineKeyboardButton("مِسِحِ", callback_data="cbevery")
                 ],
             ]
         ),
@@ -155,21 +155,21 @@ async def admin_set(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbabout"))
 async def about_set(_, query: CallbackQuery):
     await query.edit_message_text(
-    f"""‹ مرحبا بك في قسم الاعدادات  › [{query.message.chat.first_name}](tg://user?id={query.message.chat.id})
+    f"""‹ أمر قسم الاعدادات  › [{query.message.chat.first_name}](tg://user?id={query.message.chat.id})
 
-- يمكنك الانضمام والتواصل مع المطورين عن طريق الازرار أدناه""",
+- يمديك الانضمام والتواصل مع المطورين عن طريق الازرار التحت """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("‹ قناة الدعم ›", url=f"https://t.me/{SUPPORT}"),
-                    InlineKeyboardButton("‹ قناة المطور ›", url=f"https://t.me/{UPDATE}")
+                    InlineKeyboardButton("قناެة اެݪدعم .", url=f"https://t.me/{SUPPORT}"),
+                    InlineKeyboardButton("قناެة اެݪمطوَࢪ", url=f"https://t.me/{UPDATE}")
                 ],[
-                    InlineKeyboardButton("‹ مطور البوت ›", url=f"https://t.me/{OWNER_USERNAME}"),
-                    InlineKeyboardButton("‹ حساب المساعد ›", url=f"https://t.me/{ASSUSERNAME}")
+                    InlineKeyboardButton("🦎 اެݪمطوࢪ", url=f"https://t.me/{OWNER_USERNAME}"),
+                    InlineKeyboardButton("حساެب اެݪمساެعد .", url=f"https://t.me/{ASSUSERNAME}")
                 ],[
                     InlineKeyboardButton("‹ السورس ›", url="https://t.me/Xl444")
                 ],[
-                    InlineKeyboardButton("‹ رجوع ›", callback_data="cbhome")
+                    InlineKeyboardButton("مِسِحِ", callback_data="cbhome")
                 ],
             ]
         ),
