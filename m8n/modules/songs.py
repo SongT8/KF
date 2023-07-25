@@ -14,7 +14,7 @@ def time_to_seconds(time):
     return sum(int(x) * 60**i for i, x in enumerate(reversed(stringt.split(":"))))
 
 
-@app.on_message(command(["بحث", f"يوت"])
+@app.on_message(command(["ب", f"يوت"])
 & ~filters.edited)
 def song(_, message):
 
@@ -24,7 +24,7 @@ def song(_, message):
 
     query = "".join(" " + str(i) for i in message.command[1:])
     print(query)
-    m = message.reply("‹ تم جار ›")
+    m = message.reply("❤️‍🔥 تَحَمَيَݪ اެݪمَݪفَ...")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=5).to_dict()
@@ -42,11 +42,11 @@ def song(_, message):
 
     except Exception as e:
         m.edit(
-            "‹ الاغنيه مموجودة ترا ، انطيني اسمها الكامل ›"
+            "‹ بالرد على ملف صوتي او اعطاء شيئ للبحث  ›"
         )
         print(str(e))
         return
-    m.edit("‹ رفع الاغنية ›")
+    m.edit("❤️‍🔥 ࢪفَع اݪمَݪف...")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
