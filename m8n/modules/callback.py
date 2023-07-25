@@ -167,7 +167,7 @@ async def about_set(_, query: CallbackQuery):
                     InlineKeyboardButton("🦎 اެݪمطوࢪ", url=f"https://t.me/{OWNER_USERNAME}"),
                     InlineKeyboardButton("حساެب اެݪمساެعد .", url=f"https://t.me/{ASSUSERNAME}")
                 ],[
-                    InlineKeyboardButton("‹ السورس ›", url="https://t.me/Xl444")
+                    InlineKeyboardButton("‹ السورس ›", url="https://t.me/Tbiix")
                 ],[
                     InlineKeyboardButton("ࢪجَۅعَ", callback_data="cbhome")
                 ],
