@@ -14,25 +14,23 @@ from m8n.config import BOT_NAME
 @Client.on_callback_query(filters.regex("cbhome"))
 async def cbhome(_, query: CallbackQuery):
     await query.edit_message_text(
-        f""" ‹ مرحبا بك عزيزي في بوت **{BOT_NAME}**
-
-- اضغط على زر ‹ الاوامر › لمعرفة الأوامر ›
-
- - اضغط على زر ‹ الاعدادات › لمعرفة الاعدادات ›""",
+        f""" {message.from_user.mention()} 🫶🏻\n
+صِبَاެحِكَ سِكَࢪ ۅٛحِݪيَبَ ، مِمِكَنِ تَضِيَفَنِيَ حِتَىِ اެجَيَبَ ؟ 🐥.
+""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "‹ الاعدادات ›", callback_data="cbabout"),
+                        "اެݪاެعداެداެت", callback_data="cbabout"),
                 ],
                 [
 
                     InlineKeyboardButton(
-                        "‹ الاوامر ›", callback_data="cbevery")
+                        "اެݪاެوِاެمࢪ", callback_data="cbevery")
                 ],
                 [
                     InlineKeyboardButton(
-                        "‹ اضفني الى مجموعتك ›", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        "🥇 اެضفني اެݪى مجموعتَك 🥇", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                 ]
                 
            ]
@@ -44,9 +42,9 @@ async def cbhome(_, query: CallbackQuery):
 async def cbcmds_set(_, query: CallbackQuery):
         await query.answer("commands menu")
         await query.edit_message_text(
-        f"""‹ مرحا بك في قسم الاوامر  › [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) 
+        f"""‹ اوامر البوت › [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) 
 
-- يمكنك معرفة الاوامر عن طريق الازرار أدناه -""",
+- يمديك تشوف كل الاوامر عن طريق الازرار أدناه -""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
