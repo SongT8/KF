@@ -29,15 +29,15 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "‹ الاعدادات ›", callback_data="cbabout"),
+                        "اެݪاެعداެداެت", callback_data="cbabout"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "‹ الاوامر ›", callback_data="cbevery")
+                        "اެݪاެوِاެمࢪ", callback_data="cbevery")
                 ],
                 [
                     InlineKeyboardButton(
-                        "‹ اضفني الى مجموعتك ›", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        "🥇 اެضفني اެݪى مجموعتَك 🥇", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                 ]
            ]
         ),
