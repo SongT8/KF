@@ -42,16 +42,15 @@ async def start_(client: Client, message: Message):
     )
 
 
-
-@Client.on_message(command(["المطور", f"مطور"]) & filters.group & ~filters.edited)
+@Client.on_message(command(["السورس", f"مطور السورس"]) & filters.group & ~filters.edited)
 async def gcstart(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/5fdd8da2461c05d893189.jpg",
-        caption=f"- مطور البوت . \n\n - قناة المطور @{UPDATE}",
+        photo=f"https://telegra.ph/file/9a0b3e3e819ef468a3063.jpg",
+        caption=f" [‹ السورس ›](http://t.me/Tbiix)",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("- المطور .", url=f"https://t.me/{OWNER_USERNAME}")
+                    InlineKeyboardButton("‹ مطور السورس ›", url=f"https://t.me/nnnnnnnnnr")
                 ]
             ]
         ),
