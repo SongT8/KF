@@ -171,7 +171,7 @@ async def skip(_, message: Message):
     chat_id = message.chat.id
     chat_title = message.chat.title
     if not await is_active_chat(chat_id):
-        await message.reply_text(" __**- ماެكو شي مشتغݪ ياެعيني .**__")
+        await message.reply_text(" __**- ياެعيني عݪيك اެلمطوࢪ يمكن دتشۅف ماެكۅ شي مشتغݪ شتِحس ؟ .**__")
     else:
         task_done(chat_id)
         if is_empty(chat_id):
