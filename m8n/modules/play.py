@@ -227,7 +227,7 @@ async def play(_, message: Message):
             " __**- المطور ضايج وطفة البوت راسلة وكله شبيك رحمه للاسلام ! **__"
         )
         return
-    lel = await message.reply("‹ يتم التشغيل الان ›")
+    lel = await message.reply("يَتمَ اެݪتشغِيݪ اެلانِ ...")
 
     chid = message.chat.id
 
