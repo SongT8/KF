@@ -27,10 +27,6 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "اެݪاެعداެداެت", callback_data="cbabout"),
-                ],
-                [
-                    InlineKeyboardButton(
                         "اެݪاެوِاެمࢪ", callback_data="cbevery")
                 ],
                 [
