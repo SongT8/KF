@@ -152,7 +152,8 @@ async def admin_set(_, query: CallbackQuery):
 async def admin_set(_, query: CallbackQuery):
     await query.answer("admins menu")
     await query.edit_message_text(
-    f""" الحين وصلت الى طريقة تشغيل البوت تحت .
+    f"""الحين وصلت الى طريقة تشغيل البوت تحت .
+
 ١ | أولا ، أضفني الى مجموعتك
 ٢ | بعد ذالك قم برفعي كمشرف واعطائي صلاحيات مثل باقي البشر .
 ٣ | بعد ذالك اكتب تنظيف بيانات البوت
@@ -160,3 +161,11 @@ async def admin_set(_, query: CallbackQuery):
 ٤ | اذ لم تستطيع اضافة المساعد او واجهت مشاكل تحدث مع رئيس الوزراء . @{OWNER_USERNAME}
 
 """,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("-› ࢪجَۅعَ", callback_data="home_start")
+                ],
+            ]
+        ),
+    )
