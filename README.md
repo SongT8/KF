@@ -1,2 +1,2 @@
-Developer: @nnnnnnnnnr 
+Developer: https://t.me/nnnnnnnnnr
 
