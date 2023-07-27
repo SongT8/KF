@@ -7,7 +7,7 @@
     "stack": "container",
     "env": {
         "SESSION_NAME": {
-            "description": "اكتب هنا كود بايروجرام ‹ تيرمكس › ",
+            "description": "اكتب هنا كود بايروجرام عليك طلب البوت من المطور حصرا : https://t.me/Tbiix",
             "required": true
         },
         "OWNER_ID": {
