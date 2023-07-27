@@ -1,9 +1,9 @@
 {
-    "name": "سورس فنيوم ميوزك مجاني حب .",
-    "description": "سورس فريدوم لتشغيل الاغاني , رائع انت تستخدم احدث اصدار !",
-    "logo": "https://te.legra.ph/file/4807752a011965b771900.jpg",
+    "name": "سورس ريبو بوت .",
+    "description": "تشغيل الاغاني في المجموعات  !",
+    "logo": "https://te.legra.ph/file/d70bb6fa92728763c671f.png",
     "keywords": ["music", "voice chat", "telegram"],
-    "repository": "https://github.com/STKR2/LG",
+    "repository": "https://github.com/SongT8/KF",
     "stack": "container",
     "env": {
         "SESSION_NAME": {
