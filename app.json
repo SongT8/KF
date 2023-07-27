@@ -67,12 +67,12 @@
             
         },
         "API_ID": {
-            "description": "انجب ولتلعب بيها ",
+            "description": "لاتلعب ابد",
             "required": true,
             "value": "19921316"
         },
         "API_HASH": {
-            "description": "انجب ولتلعب بيها",
+            "description": "لاتلعب ابد",
             "required": true,
             "value": "121bfb32fedd296a5bb44366a3df59d6"
         },
