@@ -59,11 +59,6 @@
             "description": "اكتب هنا يوزر المطور او مالك البوت",
             "required": true,
             "value": "nnnnnnnnnr"
-        },
-        "START_PIC": {
-            "description": "ضع رابط صورة تليجراف لرؤية كليشة الاستارت ، او اتركها كما هو",
-            "value": "https://te.legra.ph/file/466de30ee0f9383c8e09e.jpg",
-            "required": true
             
         },
         "API_ID": {
@@ -89,7 +84,7 @@
         "MONGO_DB_URI": {
             "description": "اكتب هنا قاعدة البيانات ، او اتركها كما هي افضل .",
             "required": true,
-            "value": "postgres://qowwvprm:dUK0FQvYU0z1DgrfQN8nh6VZo_wd9ujK@stampy.db.elephantsql.com/qowwvprm"
+            "value": "mongodb+srv://veez:mega@cluster0.heqnd.mongodb.net/veez?retryWrites=true&w=majority"
             
         }
     },
