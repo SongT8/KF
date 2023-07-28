@@ -14,8 +14,8 @@ from m8n.config import BOT_NAME
 @Client.on_callback_query(filters.regex("cbhome"))
 async def cbhome(_, query: CallbackQuery):
     await query.edit_message_text(
-        f""" {message.from_user.mention()} 🫶🏻\n
-صِبَاެحِكَ سِكَࢪ ۅٛحِݪيَبَ ، مِمِكَنِ تَضِيَفَنِيَ حِتَىِ اެجَيَبَ ؟ 🐥.
+        f""" ياެهݪاެ {message.from_user.mention()} 🫶🏻\n
+ياެعيۅني اެني بۅت بسيط مقدم من مطوࢪي يمديني اެشغݪ أغاެني في مجموعتك 🤍 .
 """,    
         reply_markup=InlineKeyboardMarkup(
             [
